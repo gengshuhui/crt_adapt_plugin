@@ -1,0 +1,14 @@
+FROM ubuntu:22.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y \
+    gcc \
+    g++ \
+    binutils \
+    file \
+    patchelf \
+    gcc-11-plugin-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /work

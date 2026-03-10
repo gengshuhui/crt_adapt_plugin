@@ -1,0 +1,6 @@
+# compiled binaries
+bin/
+plugin/crtadapt.so
+
+# build logs
+build.log
